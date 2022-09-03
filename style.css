@@ -8,7 +8,7 @@ input:focus {outline:none!important;}
 #conversas {
     display: flex;
     flex-direction: column;
-    max-width: 30%;
+    max-width: 412px;
     min-width: 336px;
     height: 100vh;
     background-color: #111b21;
@@ -29,13 +29,14 @@ input:focus {outline:none!important;}
     cursor:pointer;
 }
 #menu-paginas {
-    width: 140px;
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 #menu-paginas img {
     width: 24px;
     cursor: pointer;
+    margin-right: 30px;
 }
 
 #area-pesquisa {
@@ -104,6 +105,16 @@ input:focus {outline:none!important;}
 #div-contatos {
     overflow-y: scroll;
 }
+::-webkit-scrollbar {
+    background-color: #111b21;
+    width: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #374045;
+    height: 10px;
+}
 .contato {
 
     margin-top: 10px;
@@ -126,7 +137,8 @@ input:focus {outline:none!important;}
 .info-contato {
     margin-top: 15px;
     margin-left: 15px;
-    width: 100%;
+    width: 81%;
+    border-bottom: 1px solid #222d34;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -138,7 +150,7 @@ input:focus {outline:none!important;}
     font-size: 18px;
 }
 .hora-contato {
-    margin-right: 18px;
+    margin-right: 8px;
     margin-left: 60%;
     color: #8696a0;
     font-family: Arial, Helvetica, sans-serif;
