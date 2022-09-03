@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
 }
+
 input {border:0;outline:0;}
 input:focus {outline:none!important;}
 
 #conversas {
+    float: left;
     display: flex;
     flex-direction: column;
-    max-width: 412px;
-    min-width: 336px;
+    width: 30%;
     height: 100vh;
     background-color: #111b21;
 }
@@ -146,21 +147,42 @@ input:focus {outline:none!important;}
 .nome-contato {
     
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    font-size: 16px;
 }
 .hora-contato {
     margin-right: 8px;
     margin-left: 60%;
     color: #8696a0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
 }
 .mensagem-contato {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
     font-size: 14px;
     color: #8696a0;
     max-width: 100%;
     position: relative;
     bottom: 5px;
+}
+
+#propaganda {
+    float: right;
+    background-color: #222e35;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#carlos-daniel {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 36px;
+    margin-right: 10px;
+}
+#github {
+    width: 60px;
+    height: 60px;
 }
